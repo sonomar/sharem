@@ -1,0 +1,36 @@
+	<div class="feed_data_area">	
+		<div class="new_feed" id="daily_feed1">
+          <h3><%=select_feed(0).title%></h3>
+            <ul>
+              <%select_feed(0).entries.each do |entry|%>
+                <li>
+                  <a href=<%=entry.url%>><%=entry.title%></a>
+                </li>
+              <%end%>
+            </ul>
+        </div>
+
+
+        <div class="new_feed" id="daily_feed2">
+          <h3><%=select_feed(1).title%></h3>
+            <ul>
+              <%select_feed(1).entries.each do |entry|%>
+                <li>
+                  <a href=<%=entry.url%>><%=entry.title%></a>
+                </li>
+              <%end%>
+            </ul>
+        </div>
+        
+        <div class="new_feed" id="daily_feed3">
+          <h3><%=select_feed(2).title%></h3>
+            <ul>
+              <%select_feed(2).entries.each do |entry|%>
+                <li>
+                  <a href=<%=entry.url%>><%=entry.title%></a>
+                </li>
+              <%end%>
+            </ul>
+        </div>
+
+    </div>

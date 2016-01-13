@@ -12,6 +12,10 @@ gem 'activerecord'
 gem 'bcrypt-ruby'
 
 gem 'rake'
+gem 'pry', '~> 0.10.3'
+gem 'feedjira'
+
+gem 'builder', '~> 3.2', '>= 3.2.2'
 
 gem 'shotgun'
 
