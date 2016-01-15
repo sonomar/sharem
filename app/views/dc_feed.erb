@@ -1,10 +1,15 @@
-	<div class="feed_data_area">	
-		<div class="new_feed" id="daily_feed1">
+	<div class="feed_data_area", id="dc_feed_area">	
+		
+        <div class="new_feed" id="daily_feed1">
           <h3><%=select_feed(0).title%></h3>
             <ul>
               <%select_feed(0).entries.each do |entry|%>
                 <li>
-                  <a href=<%=entry.url%>><%=entry.title%></a>
+                  <%if entry.url%>
+                    <a href=<%=entry.url%>><%=entry.title%></a>
+                  <%else%>
+                    <span><%=entry.title%></span>
+                  <%end%>
                 </li>
               <%end%>
             </ul>
@@ -16,7 +21,11 @@
             <ul>
               <%select_feed(1).entries.each do |entry|%>
                 <li>
-                  <a href=<%=entry.url%>><%=entry.title%></a>
+                  <%if entry.url%>
+                    <a href=<%=entry.url%>><%=entry.title%></a>
+                  <%else%>
+                    <span><%=entry.title%></span>
+                  <%end%>
                 </li>
               <%end%>
             </ul>
@@ -27,7 +36,11 @@
             <ul>
               <%select_feed(2).entries.each do |entry|%>
                 <li>
-                  <a href=<%=entry.url%>><%=entry.title%></a>
+                  <%if entry.url%>
+                    <a href=<%=entry.url%>><%=entry.title%></a>
+                  <%else%>
+                    <span><%=entry.title%></span>
+                  <%end%>
                 </li>
               <%end%>
             </ul>

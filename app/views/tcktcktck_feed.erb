@@ -1,0 +1,17 @@
+<div class="feed_data_area", id="tcktck_feed_area"> 
+        
+        <div class="new_feed" id="tcktck_feed1">
+          <h3><%=select_feed(24).title%></h3>
+            <ul>
+              <%select_feed(24).entries.each do |entry|%>
+                <li>
+                  <%if entry.url%>
+                    <a href=<%=entry.url%>><%=entry.title%></a>
+                  <%else%>
+                    <span><%=entry.title%></span>
+                  <%end%>
+                </li>
+              <%end%>
+            </ul>
+        </div>
+</div>

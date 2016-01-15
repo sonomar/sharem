@@ -1,0 +1,17 @@
+<div class="feed_data_area", id="iea_feed_area">	
+				
+				<div class="new_feed" id="iea_feed1">
+          <h3><%=select_feed(21).title%></h3>
+            <ul>
+              <%select_feed(21).entries.each do |entry|%>
+                <li>
+                  <%if entry.url%>
+                    <a href=<%=entry.url%>><%=entry.title%></a>
+                  <%else%>
+                    <span><%=entry.title%></span>
+                  <%end%>
+                </li>
+              <%end%>
+            </ul>
+        </div>
+</div>

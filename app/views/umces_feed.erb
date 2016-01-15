@@ -1,0 +1,17 @@
+<div class="feed_data_area", id="umces_feed_area">	
+				
+				<div class="new_feed" id="umces_feed1">
+          <h3><%=select_feed(22).title%></h3>
+            <ul>
+              <%select_feed(22).entries.each do |entry|%>
+                <li>
+                  <%if entry.url%>
+                    <a href=<%=entry.url%>><%=entry.title%></a>
+                  <%else%>
+                    <span><%=entry.title%></span>
+                  <%end%>
+                </li>
+              <%end%>
+            </ul>
+        </div>
+</div>

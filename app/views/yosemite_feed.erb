@@ -1,0 +1,17 @@
+<div class="feed_data_area", id="yosemite_feed_area">	
+				
+				<div class="new_feed" id="yosemite_feed1">
+          <h3><%=select_feed(17).title%></h3>
+            <ul>
+              <%select_feed(17).entries.each do |entry|%>
+                <li>
+                  <%if entry.url%>
+                    <a href=<%=entry.url%>><%=entry.title%></a>
+                  <%else%>
+                    <span><%=entry.title%></span>
+                  <%end%>
+                </li>
+              <%end%>
+            </ul>
+        </div>
+</div>

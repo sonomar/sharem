@@ -1,0 +1,95 @@
+	<div class="feed_data_area", id="unfccc_feed_area">	
+				
+				<div class="new_feed" id="unfccc_feed1">
+          <h3><%=select_feed(3).title%></h3>
+            <ul>
+              <%select_feed(3).entries.each do |entry|%>
+                <li>
+                  <%if entry.url%>
+                    <a href=<%=entry.url%>><%=entry.title%></a>
+                  <%else%>
+                    <span><%=entry.title%></span>
+                  <%end%>
+                </li>
+              <%end%>
+            </ul>
+        </div>
+
+
+        <div class="new_feed" id="unfccc_feed2">
+          <h3><%=select_feed(4).title%></h3>
+            <ul>
+              <%select_feed(4).entries.each do |entry|%>
+                <li>
+                   <%if entry.url%>
+                    <a href=<%=entry.url%>><%=entry.title%></a>
+                  <%else%>
+                    <span><%=entry.title%></span>
+                  <%end%>
+                </li>
+              <%end%>
+            </ul>
+        </div>
+        
+        <div class="new_feed" id="unfccc_feed3">
+          <h3><%=select_feed(5).title%></h3>
+            <ul>
+              <%select_feed(5).entries.each do |entry|%>
+                <li>
+                   <%if entry.url%>
+                    <a href=<%=entry.url%>><%=entry.title%></a>
+                  <%else%>
+                    <span><%=entry.title%></span>
+                  <%end%>
+                </li>
+              <%end%>
+            </ul>
+        </div>
+
+				<div class="new_feed" id="unfccc_feed4">
+          <h3><%=select_feed(6).title%></h3>
+            <ul>
+              <%select_feed(6).entries.each do |entry|%>
+                <li>
+                   <%if entry.url%>
+                    <a href=<%=entry.url%>><%=entry.title%></a>
+                  <%else%>
+                    <span><%=entry.title%></span>
+                  <%end%>
+                </li>
+              <%end%>
+            </ul>
+        </div>
+
+
+        <div class="new_feed" id="unfccc_feed5">
+          <h3><%=select_feed(7).title%></h3>
+            <ul>
+              <%select_feed(7).entries.each do |entry|%>
+                <li>
+                   <%if entry.url%>
+                    <a href=<%=entry.url%>><%=entry.title%></a>
+                  <%else%>
+                    <span><%=entry.title%></span>
+                  <%end%>
+                </li>
+              <%end%>
+            </ul>
+        </div>
+        
+        <div class="new_feed" id="unfccc_feed6">
+          <h3><%=select_feed(8).title%></h3>
+            <ul>
+              <%select_feed(8).entries.each do |entry|%>
+                <li>
+                  <%if entry.url%>
+                    <a href=<%=entry.url%>><%=entry.title%></a>
+                  <%else%>
+                    <span><%=entry.title%></span>
+                  <%end%>
+                </li>
+              <%end%>
+            </ul>
+        </div>
+
+    </div>
